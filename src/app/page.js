@@ -65,7 +65,7 @@ export default function Contacto() {
         </section>
         <section className="tooltip">
           <p>
-            Hover over the card to see the back.
+            Hover over the card to see more.
           </p>
         </section>
     </div>

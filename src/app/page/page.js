@@ -3,8 +3,9 @@ import Card from '../../components/Card'
 import img from '../../components/images/n2.jpeg'
 import a from '../../components/images/a.jpeg'
 import b from '../../components/images/b.jpeg'
+import p from '../../components/images/PBI.jpg'
 import v from '../../components/images/v.jpeg'
-import img2 from '../../components/images/a1.jpeg'
+import img2 from '../../components/images/a1.png'
 import imgv from '../../components/images/vid.jpeg'
 import imgt from '../../components/images/tomo.jpeg'
 
@@ -17,22 +18,12 @@ export default function Home() {
 	<div id='main' className=''>
 		<div className='w-full bg-base-100 h-1'>.</div>
 		<div id='carrousel' className='flex flex-row'>
+			<Card img={p}/>
 			<Card img={a}/>
 			<Card img={b}/>
 			<Card img={v}/>
+
 		</div>
-		<div className='w-full bg-base-100 h-1'>.</div>
-		<div className='interlineas bg-base-100 ' >Especialista en PowerBI</div>
-		<div className='w-full bg-base-100 h-1'>.</div>
-		<section id='' className='grid gridado bg-base-300'>
-			<div className="p-5"> 
-			<Browser imagen={img} text={textoVida} titulo='PortalWeb' link='https://www.vidaloestodo.com/' di='3' />
-			</div>
-			<div className="p-5"> 
-			<Browser imagen={img2} text={textoVida} titulo='Dashboard' link='https://www.vidaloestodo.com/' di='4' />
-			</div>
-			
-		</section>
 		<div className='w-full bg-base-100 h-1'>.</div>
 		<div className='interlineas bg-base-100' > Desarrolador de Aplicaciones Web</div>
 		<div className='w-full bg-base-100 h-1 pt-2' >.</div>
@@ -44,11 +35,21 @@ export default function Home() {
 					<Browser imagen={imgt} text={textoTomo} titulo='tomodachi' link='https://coruscating-griffin-4f1ac5.netlify.app/' di='2' />
 			</div>
 		</section>
-
-		
-		<div className='w-full bg-base-100 h-1 pt-2' >.</div>
+		<div className='w-full bg-base-100 h-1'>.</div>
+		<div className='interlineas bg-base-100 ' >Especialista en PowerBI</div>
+		<div className='w-full bg-base-100 h-1'>.</div>
+		<section id='' className='grid gridado bg-base-300'>
+			<div className="p-5"> 
+			<Browser imagen={img} text={textoVida} titulo='PortalWeb' link='https://www.vidaloestodo.com/' di='3' />
+			</div>
+			<div className="p-5"> 
+			<Browser imagen={img2} text={textoVida} titulo='Dashboard' link='https://www.vidaloestodo.com/' di='4' />
+			</div>
+			
+		</section>	
+		{/* <div className='w-full bg-base-100 h-1 pt-2' >.</div>
 		<div className='interlineas bg-base-100' >Programador Backend</div>
-		<div className='w-full bg-base-100 h-1 pt-2' >.</div>
+		<div className='w-full bg-base-100 h-1 pt-2' >.</div> */}
 	</div>
     </main>
   )
